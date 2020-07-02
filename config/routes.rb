@@ -11,6 +11,11 @@ Rails.application.routes.draw do
   devise_scope :admin do
    get 'demo/admins_only', to: 'demo#admins_only'
   end
+  namespace :api, format: 'json' do
+    namespace :v1 do
+      resources :book
+    end
+  end
 end
 
 
