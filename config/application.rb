@@ -39,7 +39,8 @@ module Shopping
         origins "*"
         resource "*",
          headers: :any,
-         methods: [:get, :post, :options, :head]
+         expose: ['access-token', 'expiry', 'token-type', 'uid', 'client'],
+         methods: [:get, :post, :options, :delete, :put]
       end
     end
   end
