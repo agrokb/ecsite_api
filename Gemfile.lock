@@ -160,6 +160,9 @@ GEM
     websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    yaml_db (0.7.0)
+      rails (>= 3.0)
+      rake (>= 0.8.7)
     zeitwerk (2.3.0)
 
 PLATFORMS
@@ -178,6 +181,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
+  yaml_db
 
 RUBY VERSION
    ruby 2.6.3p62

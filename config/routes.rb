@@ -7,7 +7,6 @@ Rails.application.routes.draw do
 
   # this route will authorize requests using the User class
   get 'demo/members_only', to: 'demo#members_only'
-
   # routes within this block will authorize requests using the Admin class
   devise_scope :admin do
    get 'demo/admins_only', to: 'demo#admins_only'
